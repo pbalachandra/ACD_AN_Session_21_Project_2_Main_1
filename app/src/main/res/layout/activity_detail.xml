@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/background"
+    tools:context="com.acadgild.balu.imdb.DetailActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView_moviePoster"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:id="@+id/textView_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.05"
+        android:rating="0"
+        android:isIndicator="true"
+        android:layout_below="@+id/textView_title"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_description"
+        android:textStyle="italic"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_date"
+        android:layout_below="@+id/textView_description"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_budget"
+        android:layout_below="@+id/textView_date"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_revenue"
+        android:layout_below="@+id/textView_budget"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_status"
+        android:layout_below="@+id/textView_revenue"
+        android:layout_toRightOf="@+id/imageView_moviePoster"
+         />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView_votes"
+        android:src="@drawable/star_full"
+        android:layout_below="@+id/imageView_moviePoster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_vote_average"
+        android:layout_below="@+id/imageView_moviePoster"
+        android:layout_toRightOf="@+id/imageView_votes"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_vote_count"
+        android:layout_below="@+id/textView_vote_average"
+        android:layout_toRightOf="@+id/imageView_votes"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_overview"
+        android:layout_below="@+id/imageView_votes"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView_favorites"
+        android:layout_below="@id/textView_overview"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="40dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView_watchlist"
+        android:layout_toRightOf="@id/imageView_favorites"
+        android:layout_below="@id/textView_overview"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_favorites_label"
+        android:text="@string/menu_favorites"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView_favorites"
+        android:layout_marginLeft="40dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_watchlist_label"
+        android:text="@string/menu_watchlist"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView_watchlist"
+        android:layout_alignRight="@+id/imageView_watchlist"
+        android:layout_alignEnd="@+id/imageView_watchlist" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view_posters"
+        android:layout_below="@id/textView_watchlist_label"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView_arrow_posters"
+        android:src="@drawable/round_arrow_right"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/view_posters"
+        android:layout_alignParentLeft="true"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/textView_posters_label"
+    android:text="@string/posters"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="5dp"
+    android:layout_alignBottom="@+id/imageView_arrow_posters"
+    android:layout_toRightOf="@+id/imageView_arrow_posters"
+    android:layout_toEndOf="@+id/imageView_arrow_posters" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView_posters"
+        android:layout_below="@id/textView_posters_label"
+        android:layout_marginTop="@dimen/scroll_view_margin"
+        android:layout_marginBottom="@dimen/scroll_view_margin"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayout_posters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view_trailers"
+        android:layout_below="@id/horizontalScrollView_posters"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView_arrow_trailers"
+        android:src="@drawable/round_arrow_right"
+        android:layout_below="@id/view_trailers"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/textView_trailers_label"
+    android:text="@string/trailers"
+    android:textStyle="bold"
+    android:layout_alignBottom="@+id/imageView_arrow_trailers"
+    android:layout_toRightOf="@+id/imageView_arrow_trailers"
+    android:layout_toEndOf="@+id/imageView_arrow_trailers"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="5dp"
+
+    />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView_trailers"
+        android:layout_below="@+id/textView_trailers_label"
+        android:layout_marginTop="@dimen/scroll_view_margin"
+        android:layout_marginBottom="@dimen/scroll_view_margin"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayout_trailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view_cast"
+        android:layout_below="@id/horizontalScrollView_trailers"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView_arrow_cast"
+        android:src="@drawable/round_arrow_right"
+        android:layout_below="@id/view_cast"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/textView_cast_label"
+    android:text="@string/cast"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_alignBottom="@+id/imageView_arrow_cast"
+    android:layout_toRightOf="@+id/imageView_arrow_cast"
+    android:layout_toEndOf="@+id/imageView_arrow_cast"
+    android:paddingLeft="5dp"
+
+    />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView_cast"
+        android:layout_below="@id/textView_cast_label"
+        android:layout_marginTop="@dimen/scroll_view_margin"
+        android:layout_marginBottom="@dimen/scroll_view_margin"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayout_cast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view_crew"
+        android:layout_below="@id/horizontalScrollView_cast"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView_arrow_crew"
+        android:src="@drawable/round_arrow_right"
+        android:layout_below="@id/view_crew"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/textView_crew_label"
+    android:text="@string/crew"
+    android:textStyle="bold"
+    android:layout_alignBottom="@+id/imageView_arrow_crew"
+    android:layout_toRightOf="@+id/imageView_arrow_crew"
+    android:layout_toEndOf="@+id/imageView_arrow_crew"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="5dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView_crew"
+        android:layout_below="@id/textView_crew_label"
+        android:layout_marginTop="@dimen/scroll_view_margin"
+        android:layout_marginBottom="@dimen/scroll_view_margin"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/linearLayout_crew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view_end"
+        android:layout_below="@id/horizontalScrollView_crew"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/background" />
+
+</RelativeLayout>
+</ScrollView>

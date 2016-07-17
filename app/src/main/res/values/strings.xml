@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">IMDB</string>
+    <string name="menu_popular">Most Popular</string>
+    <string name="menu_upcoming">Upcoming Movies</string>
+    <string name="menu_latest">Latest Movies</string>
+    <string name="menu_playing">Now Playing</string>
+    <string name="menu_top">Top Rated</string>
+    <string name="menu_favorites">My Favorites</string>
+    <string name="menu_watchlist">My Watchlist</string>
+    <string name="release_date">Release Date : </string>
+    <string name="popularity">Popularity : </string>
+    <string name="budget">Budget : $</string>
+    <string name="revenue">Revenue : $ </string>
+    <string name="status">Status : </string>
+    <string name="posters">Posters</string>
+    <string name="trailers">Trailers</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+</resources>
